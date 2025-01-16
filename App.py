@@ -14,7 +14,6 @@ def load_data():
 
 # Judul aplikasi
 st.title("Prediksi Harga Sepeda Motor Bekas")
-st.write("Masukkan informasi sepeda motor untuk mendapatkan prediksi harga secara otomatis.")
 
 try:
     # Memuat dataset
