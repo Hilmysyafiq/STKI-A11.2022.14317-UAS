@@ -71,8 +71,12 @@ try:
         user_inputs[f"transmisi_{selected_transmisi}"] = 1
 
         for column in X.columns:
-            if not (column.startswith("model_") or column.startswith("jenis_") or column.startswith("transmisi_") or column in ["pajak", "konsumsiBBM"]):
-                user_inputs[column] = st.number_input(f"Masukkan {column}", value=0, step=1, format="%d")
+            if not (column.startswith("model_") or column.startswith("jenis_") or column.startswith("transmisi_") or column in ["pajak", "konsumsiBBM", "odometer"]):
+                # Mengganti label 'odometer' menjadi 'kilometer yang ditempuh'
+                label = column
+                if "mesin" in column.lower():
+                    label = "Mesin (CC Motor)"
+                user_inputs[column] = st.number_input(f"Masukkan {label}", value=0, step=1, format="%d")
 
         # Melengkapi data input dengan nilai 0 untuk kolom yang tidak dipilih
         input_data = pd.DataFrame([user_inputs]).reindex(columns=X.columns, fill_value=0)
