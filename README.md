@@ -7,7 +7,7 @@
 - **kelompok :** Penambangan Data
 
 **Bahasa Pemrograman:** Python  
-**Framework:** Streamlit untuk antarmuka pengguna, Scikit-learn untuk pemodelan machine learning.
+**Framework:** Streamlit untuk antarmuka pengguna.
 
 
 
