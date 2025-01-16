@@ -1,10 +1,13 @@
-# 1. Prediksi Harga Sepeda Motor Bekas
+# STKI-A11.2022.14317-UAS
 
-## Identitas Proyek
+# Project Prediksi Harga Sepeda Motor Bekas
+
+## 1. Judul / Topik Project dan Identitas Lengkap
 **Nama Proyek:** Prediksi Harga Sepeda Motor Bekas  
 - **Nama :** Hilmy Syafiq Raihan  
 - **NIM :** A11.2022.14317
-- **kelompok :** Penambangan Data
+- **kelompok :** 4517
+- **Mata kuliah :** Penambangan Data
 
 **Bahasa Pemrograman:** Python  
 **Framework:** Streamlit untuk antarmuka pengguna.
@@ -13,7 +16,7 @@
 
 ---
 
-# 2. Ringkasan Proyek
+## 2. Ringkasan Proyek dan Permasalahan Project
 **Permasalahan:** Banyak pembeli dan penjual sepeda motor bekas mengalami kesulitan menentukan harga yang sesuai berdasarkan spesifikasi kendaraan. Hal ini sering kali menyebabkan ketidakadilan harga di pasar.  
 **Tujuan:** Proyek ini bertujuan untuk membangun model prediksi harga sepeda motor bekas menggunakan algoritma regresi, sehingga dapat memberikan estimasi harga yang akurat berdasarkan spesifikasi kendaraan.  
 
@@ -40,7 +43,7 @@ graph TD
 
 ---
 
-# 3. Dataset dan Exploratory Data Analysis (EDA)
+## 3. Penjelasan Dataset, EDA dan Proses Features Dataset
 **Sumber Dataset:** File `penjualan_sepeda_motor_bekas.csv`.  
 **Deskripsi Dataset:** Dataset ini berisi informasi tentang sepeda motor bekas, termasuk:
 - **Model:** Tipe atau model sepeda motor.
@@ -69,7 +72,7 @@ graph TD
 
 ---
 
-# 4. Proses Learning / Modeling
+## 4. Proses Learning / Modeling
 **Algoritma yang Digunakan:** Linear Regression  
 **Langkah Proses:**
 1. **Pembagian Dataset:** Dataset dibagi menjadi 80% data pelatihan dan 20% data pengujian menggunakan fungsi `train_test_split` dari Scikit-learn.
@@ -82,7 +85,7 @@ graph TD
 
 ---
 
-# 5. Performa Model
+## 5. Performa Model
 **Metode Evaluasi:**
 - **Mean Absolute Error (MAE):** Mengukur rata-rata kesalahan absolut prediksi.
 - **R-squared Score:** Mengukur proporsi variabilitas data yang dapat dijelaskan oleh model.
@@ -110,7 +113,7 @@ streamlit run App.py
 
 ---
 
-# 6. Diskusi Hasil dan Kesimpulan
+## 6. Diskusi Hasil dan Kesimpulan
 **Diskusi Hasil:**
 - Model Linear Regression memberikan prediksi yang cukup akurat berdasarkan fitur yang tersedia.
 - Faktor eksternal seperti kondisi pasar, lokasi geografis, dan tingkat permintaan tidak tercakup dalam dataset, sehingga dapat memengaruhi hasil prediksi.
